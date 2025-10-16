@@ -1,9 +1,15 @@
 import React from 'react'
-
-const page = () => {
+import WelcomeNav from '@/components/Welcome/WelcomeNav'
+import HeroContent from '@/components/Welcome/HeroContent';
+const Welcome = () => {
   return (
-    <div>page</div>
+    <>
+    <div className="min-h-screen bg-blue-50 ">
+    <WelcomeNav />
+    <HeroContent />
+    </div>
+    </>
   )
 }
 
-export default page
+export default Welcome;
