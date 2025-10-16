@@ -17,7 +17,7 @@ const Welcome = () => {
                    </div>
                    {/* Title */}
                    <Link href="/">
-                   <span className='text-2xl font-bold text-foreground'>SecureBank</span>
+                   <span className='text-xl font-bold text-foreground'>SecureBank</span>
                    </Link>
                 </div>
                 {/* Navigation Links */}
@@ -26,7 +26,7 @@ const Welcome = () => {
                     <Link href="/login">Sign In</Link>
                     </Button>
                     <Button asChild>
-              <Link href="/Register">Get Started</Link>
+              <Link href="/Register">Started</Link>
             </Button>
                 </div>
               </nav>
