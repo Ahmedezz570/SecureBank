@@ -78,8 +78,8 @@ export const Navbar = ({ currentRole, onRoleChange, userName }: NavbarProps) => 
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center gap-6">
             <Link href="/" className="flex items-center gap-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-primary">
-                <Building2 className="h-6 w-6 text-primary-foreground" />
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-700">
+                <Building2 className="h-6 w-6 text-white" />
               </div>
               <span className="hidden font-bold text-foreground sm:inline-block">
                 SecureBank
