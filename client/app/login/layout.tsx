@@ -1,11 +1,15 @@
-import React from 'react'
-import WelcomeNav from '@/components/Welcome/WelcomeNav'
-export default function RootLayout({ children }) {
+import React, { ReactNode } from 'react';
+import WelcomeNav from '@/components/Welcome/WelcomeNav';
+
+type RootLayoutProps = {
+  children: ReactNode;
+};
+
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <>
-    <WelcomeNav />
-    {children}
+      <WelcomeNav />
+      {children}
     </>
-  )
+  );
 }
-
