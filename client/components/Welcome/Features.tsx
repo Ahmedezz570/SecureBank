@@ -93,7 +93,7 @@ const Features = () => {
               Join thousands of satisfied customers who trust SecureBank for their financial needs
             </p>
             <Button size="lg" variant="secondary" asChild>
-              <Link href="/register">Create Free Account</Link>
+              <Link href="/Register">Create Free Account</Link>
             </Button>
           </CardContent>
         </Card>

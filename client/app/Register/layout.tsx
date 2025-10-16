@@ -1,11 +1,15 @@
-import React from 'react'
-import WelcomeNav from '@/components/Welcome/WelcomeNav'
-const layout = () => {
+import React, { ReactNode } from 'react';
+import WelcomeNav from '@/components/Welcome/WelcomeNav';
+
+type RootLayoutProps = {
+  children: ReactNode;
+};
+
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <>
-    <WelcomeNav />
+      <WelcomeNav />
+      {children}
     </>
-  )
+  );
 }
-
-export default layout

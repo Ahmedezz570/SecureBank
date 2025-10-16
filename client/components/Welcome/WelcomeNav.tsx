@@ -1,16 +1,34 @@
+"use client"
+import { useEffect, useState } from 'react';
 import React from 'react'
 import { Building2, Shield, Users, TrendingUp, Clock, Lock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 const Welcome = () => {
+  const [navBg, setNavBg] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= 90) {
+        setNavBg(true);
+      } else {
+        setNavBg(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     
-        <header className='container  mx-auto px-4 py-6'>
-              <nav className='flex items-center justify-between'>
+        <div className={`container mx-auto px-4 py-6`}>
+              <nav className={`flex items-center justify-between `}>
                 {/* icon and title */}
                 <div className='flex items-center gap-2'>
                   {/* Icon and this Div */}
-                  <div className='bg-blue-600 h-12 w-12 flex items-center justify-center rounded-xl'>
+                  <div className='bg-blue-600 h-10 w-10 flex items-center justify-center rounded-xl'>
                     <Link href="/">
                    <Building2 className='text-white h-6 w-7'/>
                    </Link>
@@ -30,7 +48,7 @@ const Welcome = () => {
             </Button>
                 </div>
               </nav>
-        </header>
+        </div>
   )
 }
 

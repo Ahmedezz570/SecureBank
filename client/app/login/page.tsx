@@ -6,12 +6,12 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+
 
 
 const Login = () => {
   return (
-   <div className="flex min-h-screen items-center justify-center bg-gradient-hero p-4">
+   <div className="flex min-h-screen items-center justify-center bg-blue-50 p-4">
       <Card className="w-full max-w-md shadow-xl">
         <CardHeader className="space-y-4 text-center ">
           
@@ -63,20 +63,18 @@ const Login = () => {
               />
             </div>
 
-            <Button type="submit" className="w-full">
+            <Button type="submit" className="w-full cursor-pointer">
               Sign In
             </Button>
 
             <p className="text-center text-sm text-muted-foreground">
-              Dont have an account?{" "}
-              <Link href="/register" className="font-medium text-primary hover:underline">
+              Don`t have an account?{" "}
+              <Link href="/Register" className="font-medium text-primary hover:underline">
                 Create account
               </Link>
             </p>
 
-            <p className="text-center text-xs text-muted-foreground">
-              Demo mode: Use any email and password to login
-            </p>
+           
           </form>
         </CardContent>
       </Card>
