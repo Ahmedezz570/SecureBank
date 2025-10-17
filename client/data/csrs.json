@@ -1,0 +1,62 @@
+[
+  {
+    "id": "CSR001",
+    "name": "Emily Rodriguez",
+    "email": "emily.rodriguez@bank.com",
+    "phone": "+1 (555) 123-4567",
+    "department": "Customer Support",
+    "totalCalls": 147,
+    "averageDuration": 385,
+    "complaintsHandled": 23,
+    "escalatedComplaints": 4,
+    "satisfactionRating": 4.7,
+    "status": "active",
+    "shift": "morning",
+    "joinedDate": "2023-03-15"
+  },
+  {
+    "id": "CSR002",
+    "name": "David Kim",
+    "email": "david.kim@bank.com",
+    "phone": "+1 (555) 234-5678",
+    "department": "Customer Support",
+    "totalCalls": 132,
+    "averageDuration": 420,
+    "complaintsHandled": 19,
+    "escalatedComplaints": 2,
+    "satisfactionRating": 4.5,
+    "status": "active",
+    "shift": "afternoon",
+    "joinedDate": "2023-06-22"
+  },
+  {
+    "id": "CSR003",
+    "name": "Rachel Thompson",
+    "email": "rachel.thompson@bank.com",
+    "phone": "+1 (555) 345-6789",
+    "department": "Customer Support",
+    "totalCalls": 165,
+    "averageDuration": 352,
+    "complaintsHandled": 28,
+    "escalatedComplaints": 3,
+    "satisfactionRating": 4.8,
+    "status": "active",
+    "shift": "morning",
+    "joinedDate": "2022-11-10"
+  },
+  {
+    "id": "CSR004",
+    "name": "James Wilson",
+    "email": "james.wilson@bank.com",
+    "phone": "+1 (555) 456-7890",
+    "department": "Customer Support",
+    "totalCalls": 98,
+    "averageDuration": 395,
+    "complaintsHandled": 15,
+    "escalatedComplaints": 1,
+    "satisfactionRating": 4.6,
+    "status": "active",
+    "shift": "evening",
+    "joinedDate": "2024-01-05"
+  }
+]

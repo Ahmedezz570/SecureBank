@@ -1,0 +1,96 @@
+[
+  {
+    "id": "CUST001",
+    "name": "John Anderson",
+    "email": "john.anderson@email.com",
+    "accountNumber": "ACC-2024-001",
+    "balance": 12548.75,
+    "accountType": "Checking",
+    "transactions": [
+      {
+        "id": "TXN001",
+        "date": "2025-10-15",
+        "description": "Grocery Store",
+        "amount": -125.50,
+        "type": "debit",
+        "status": "completed"
+      },
+      {
+        "id": "TXN002",
+        "date": "2025-10-14",
+        "description": "Salary Deposit",
+        "amount": 3500.00,
+        "type": "credit",
+        "status": "completed"
+      },
+      {
+        "id": "TXN003",
+        "date": "2025-10-13",
+        "description": "Electric Bill",
+        "amount": -89.25,
+        "type": "debit",
+        "status": "completed"
+      },
+      {
+        "id": "TXN004",
+        "date": "2025-10-12",
+        "description": "Restaurant",
+        "amount": -45.80,
+        "type": "debit",
+        "status": "completed"
+      },
+      {
+        "id": "TXN005",
+        "date": "2025-10-11",
+        "description": "Online Transfer",
+        "amount": -200.00,
+        "type": "debit",
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "id": "CUST002",
+    "name": "Sarah Martinez",
+    "email": "sarah.martinez@email.com",
+    "accountNumber": "ACC-2024-002",
+    "balance": 8234.20,
+    "accountType": "Savings",
+    "transactions": [
+      {
+        "id": "TXN006",
+        "date": "2025-10-15",
+        "description": "Interest Credit",
+        "amount": 15.20,
+        "type": "credit",
+        "status": "completed"
+      },
+      {
+        "id": "TXN007",
+        "date": "2025-10-10",
+        "description": "Transfer to Checking",
+        "amount": -500.00,
+        "type": "debit",
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "id": "CUST003",
+    "name": "Michael Chen",
+    "email": "michael.chen@email.com",
+    "accountNumber": "ACC-2024-003",
+    "balance": 25678.90,
+    "accountType": "Checking",
+    "transactions": [
+      {
+        "id": "TXN008",
+        "date": "2025-10-16",
+        "description": "Business Payment",
+        "amount": 5000.00,
+        "type": "credit",
+        "status": "completed"
+      }
+    ]
+  }
+]

@@ -1,0 +1,116 @@
+[
+  {
+    "id": "CHAT001",
+    "customerId": "CUST001",
+    "customerName": "John Anderson",
+    "csrId": "CSR001",
+    "csrName": "Emily Rodriguez",
+    "status": "active",
+    "startTime": "2025-10-17T10:30:00Z",
+    "lastMessage": "2025-10-17T10:45:00Z",
+    "messages": [
+      {
+        "id": "MSG001",
+        "sender": "customer",
+        "content": "Hi, I need help with my recent transaction",
+        "timestamp": "2025-10-17T10:30:00Z"
+      },
+      {
+        "id": "MSG002",
+        "sender": "csr",
+        "content": "Hello John! I'd be happy to help you. Which transaction are you referring to?",
+        "timestamp": "2025-10-17T10:31:00Z"
+      },
+      {
+        "id": "MSG003",
+        "sender": "customer",
+        "content": "The payment to Global Services for $850. It shows as pending",
+        "timestamp": "2025-10-17T10:32:00Z"
+      },
+      {
+        "id": "MSG004",
+        "sender": "csr",
+        "content": "Let me check that for you. One moment please.",
+        "timestamp": "2025-10-17T10:33:00Z"
+      },
+      {
+        "id": "MSG005",
+        "sender": "csr",
+        "content": "I can see the transaction. It's pending because it's an international payment. It should be completed within 2-3 business days.",
+        "timestamp": "2025-10-17T10:45:00Z"
+      }
+    ]
+  },
+  {
+    "id": "CHAT002",
+    "customerId": "CUST002",
+    "customerName": "Sarah Martinez",
+    "csrId": "CSR002",
+    "csrName": "David Kim",
+    "status": "active",
+    "startTime": "2025-10-17T11:00:00Z",
+    "lastMessage": "2025-10-17T11:05:00Z",
+    "messages": [
+      {
+        "id": "MSG006",
+        "sender": "customer",
+        "content": "I can't log into my mobile banking app",
+        "timestamp": "2025-10-17T11:00:00Z"
+      },
+      {
+        "id": "MSG007",
+        "sender": "csr",
+        "content": "Hi Sarah! Sorry to hear that. What error message are you seeing?",
+        "timestamp": "2025-10-17T11:02:00Z"
+      },
+      {
+        "id": "MSG008",
+        "sender": "customer",
+        "content": "It says 'Invalid credentials' but I'm sure my password is correct",
+        "timestamp": "2025-10-17T11:05:00Z"
+      }
+    ]
+  },
+  {
+    "id": "CHAT003",
+    "customerId": "CUST003",
+    "customerName": "Michael Chen",
+    "csrId": "CSR003",
+    "csrName": "Rachel Thompson",
+    "status": "completed",
+    "startTime": "2025-10-16T14:20:00Z",
+    "lastMessage": "2025-10-16T14:35:00Z",
+    "messages": [
+      {
+        "id": "MSG009",
+        "sender": "customer",
+        "content": "I'd like to request a new debit card",
+        "timestamp": "2025-10-16T14:20:00Z"
+      },
+      {
+        "id": "MSG010",
+        "sender": "csr",
+        "content": "I can help with that! Have you lost your current card or is it damaged?",
+        "timestamp": "2025-10-16T14:22:00Z"
+      },
+      {
+        "id": "MSG011",
+        "sender": "customer",
+        "content": "It's damaged. The chip doesn't work properly",
+        "timestamp": "2025-10-16T14:24:00Z"
+      },
+      {
+        "id": "MSG012",
+        "sender": "csr",
+        "content": "I've processed your request. Your new card will arrive in 5-7 business days. Is there anything else I can help you with?",
+        "timestamp": "2025-10-16T14:32:00Z"
+      },
+      {
+        "id": "MSG013",
+        "sender": "customer",
+        "content": "No, that's all. Thank you!",
+        "timestamp": "2025-10-16T14:35:00Z"
+      }
+    ]
+  }
+]

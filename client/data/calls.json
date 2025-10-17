@@ -1,0 +1,67 @@
+[
+  {
+    "id": "CALL001",
+    "customerId": "CUST001",
+    "customerName": "John Anderson",
+    "csrId": "CSR001",
+    "csrName": "Emily Rodriguez",
+    "startTime": "2025-10-16T09:15:00Z",
+    "duration": 420,
+    "status": "completed",
+    "type": "phone",
+    "subject": "Account Balance Inquiry",
+    "notes": "Customer inquired about recent transactions and current balance. Provided detailed breakdown."
+  },
+  {
+    "id": "CALL002",
+    "customerId": "CUST002",
+    "customerName": "Sarah Martinez",
+    "csrId": "CSR002",
+    "csrName": "David Kim",
+    "startTime": "2025-10-16T10:30:00Z",
+    "duration": 0,
+    "status": "active",
+    "type": "chat",
+    "subject": "Card Activation",
+    "notes": "Currently assisting with new debit card activation process."
+  },
+  {
+    "id": "CALL003",
+    "customerId": "CUST003",
+    "customerName": "Michael Chen",
+    "csrId": "CSR001",
+    "csrName": "Emily Rodriguez",
+    "startTime": "2025-10-16T08:45:00Z",
+    "duration": 650,
+    "status": "completed",
+    "type": "phone",
+    "subject": "Wire Transfer Status",
+    "notes": "Customer requested update on international wire transfer. Escalated to admin for faster resolution."
+  },
+  {
+    "id": "CALL004",
+    "customerId": "CUST001",
+    "customerName": "John Anderson",
+    "csrId": "CSR003",
+    "csrName": "Rachel Thompson",
+    "startTime": "2025-10-15T15:20:00Z",
+    "duration": 320,
+    "status": "completed",
+    "type": "phone",
+    "subject": "Transaction Dispute",
+    "notes": "Filed dispute for unauthorized charge. Sent dispute form via email."
+  },
+  {
+    "id": "CALL005",
+    "customerId": "CUST002",
+    "customerName": "Sarah Martinez",
+    "csrId": "CSR002",
+    "csrName": "David Kim",
+    "startTime": "2025-10-15T11:00:00Z",
+    "duration": 180,
+    "status": "completed",
+    "type": "chat",
+    "subject": "Password Reset",
+    "notes": "Assisted customer with online banking password reset. Verified identity successfully."
+  }
+]

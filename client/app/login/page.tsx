@@ -6,10 +6,16 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-
+import { useRouter } from "next/navigation";
 
 
 const Login = () => {
+     const router = useRouter(); 
+  const submit = () => {
+    console.log("Submitted");
+    router.push('/Customer/Dashboard');
+
+  }
   return (
    <div className="flex min-h-screen items-center justify-center bg-blue-50 p-4">
       <Card className="w-full max-w-md shadow-xl">
@@ -63,7 +69,7 @@ const Login = () => {
               />
             </div>
 
-            <Button type="submit" className="w-full cursor-pointer">
+            <Button type="submit" className="w-full cursor-pointer" onClick={submit}>
               Sign In
             </Button>
 

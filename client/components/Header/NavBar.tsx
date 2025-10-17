@@ -35,9 +35,10 @@ export const Navbar = ({ currentRole, onRoleChange, userName }: NavbarProps) => 
     switch (currentRole) {
       case "customer":
         return [
-          { to: "/dashboard", label: "Dashboard" },
-          { to: "/transfer", label: "Transfer" },
-          { to: "/complaints", label: "Support" },
+          { to: "/Customer/Dashboard", label: "Dashboard" },
+          { to: "/Customer/Transfer", label: "Transfer" },
+          { to: "/Customer/Support", label: "Support" },
+          { to: "/Customer/Chat", label: "Chat" },
         ];
       case "csr":
         return [
@@ -77,14 +78,14 @@ export const Navbar = ({ currentRole, onRoleChange, userName }: NavbarProps) => 
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center gap-6">
-            <Link href="/" className="flex items-center gap-2">
+            {/* <Link href="/" className="flex items-center gap-2"> */}
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-700">
                 <Building2 className="h-6 w-6 text-white" />
               </div>
-              <span className="hidden font-bold text-foreground sm:inline-block">
+              <span className=" font-bold text-foreground sm:inline-block">
                 SecureBank
               </span>
-            </Link>
+            {/* </Link> */}
 
             <div className="hidden md:flex md:gap-2">
               <NavLinks />
@@ -94,7 +95,7 @@ export const Navbar = ({ currentRole, onRoleChange, userName }: NavbarProps) => 
           <div className="flex items-center gap-3">
             {/* <ThemeToggle /> */}
             
-            <Select value={currentRole} onValueChange={onRoleChange}>
+            {/* <Select value={currentRole} onValueChange={onRoleChange}>
               <SelectTrigger className="w-[140px]">
                 <SelectValue />
               </SelectTrigger>
@@ -103,7 +104,7 @@ export const Navbar = ({ currentRole, onRoleChange, userName }: NavbarProps) => 
                 <SelectItem value="csr">CSR Agent</SelectItem>
                 <SelectItem value="admin">Admin</SelectItem>
               </SelectContent>
-            </Select>
+            </Select> */}
 
             <DropdownMenu>
               <DropdownMenuTrigger asChild>

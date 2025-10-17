@@ -1,0 +1,50 @@
+[
+  {
+    "id": "COMP001",
+    "customerId": "CUST001",
+    "customerName": "John Anderson",
+    "subject": "Unauthorized Transaction",
+    "description": "I noticed a charge of $250 on my account that I did not authorize. Please investigate.",
+    "status": "open",
+    "priority": "high",
+    "createdAt": "2025-10-15T09:30:00Z",
+    "assignedTo": "CSR001",
+    "escalated": false
+  },
+  {
+    "id": "COMP002",
+    "customerId": "CUST002",
+    "customerName": "Sarah Martinez",
+    "subject": "Card Not Working",
+    "description": "My debit card is being declined at ATMs and stores even though I have sufficient balance.",
+    "status": "in_progress",
+    "priority": "medium",
+    "createdAt": "2025-10-14T14:15:00Z",
+    "assignedTo": "CSR002",
+    "escalated": false
+  },
+  {
+    "id": "COMP003",
+    "customerId": "CUST003",
+    "customerName": "Michael Chen",
+    "subject": "Delay in Fund Transfer",
+    "description": "My wire transfer initiated 3 days ago has not been credited to the recipient account yet.",
+    "status": "escalated",
+    "priority": "high",
+    "createdAt": "2025-10-12T10:00:00Z",
+    "assignedTo": "CSR001",
+    "escalated": true
+  },
+  {
+    "id": "COMP004",
+    "customerId": "CUST001",
+    "customerName": "John Anderson",
+    "subject": "Interest Rate Query",
+    "description": "I would like information about upgrading to a premium savings account with better rates.",
+    "status": "resolved",
+    "priority": "low",
+    "createdAt": "2025-10-10T11:20:00Z",
+    "assignedTo": "CSR003",
+    "escalated": false
+  }
+]
