@@ -47,9 +47,9 @@ export const Navbar = ({ currentRole, onRoleChange, userName }: NavbarProps) => 
         ];
       case "admin":
         return [
-          { to: "/admin", label: "Dashboard" },
-          { to: "/admin/csrs", label: "CSR Team" },
-          { to: "/admin/reports", label: "Reports" },
+          { to: "/Admin/Dashboard", label: "Dashboard" },
+          { to: "/Admin/CSR-Team", label: "CSR Team" },
+          { to: "/Admin/Reports", label: "Reports" },
         ];
       default:
         return [];
@@ -123,11 +123,11 @@ export const Navbar = ({ currentRole, onRoleChange, userName }: NavbarProps) => 
                 </DropdownMenuLabel>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem asChild>
-                  <Link href="/profile" className="cursor-pointer">Profile Settings</Link>
+                  <Link href="/Profile" className="cursor-pointer">Profile Settings</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>Account Security</DropdownMenuItem>
                 <DropdownMenuSeparator />
-                <DropdownMenuItem className="text-destructive">
+                <DropdownMenuItem className="text-destructive">                  
                   Sign Out
                 </DropdownMenuItem>
               </DropdownMenuContent>

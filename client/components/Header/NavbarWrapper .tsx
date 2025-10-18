@@ -9,7 +9,7 @@ export default function NavbarWrapper() {
 
   return (
     <Navbar
-      currentRole="customer"
+      currentRole="admin"
       onRoleChange={handleRoleChange}
       userName="Ahmed"
     />

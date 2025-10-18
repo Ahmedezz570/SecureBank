@@ -32,7 +32,6 @@ const Chat = ({ userRole }: { userRole: string }) => {
    userRole = "customer"; 
   const isCustomer = userRole === "customer";
   
-  // Filter chats based on role
   const userChats = isCustomer
     ? chatsData.filter((chat) => chat.customerId === "CUST001")
     : chatsData.filter((chat) => chat.status === "active");
