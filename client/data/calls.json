@@ -63,5 +63,18 @@
     "type": "chat",
     "subject": "Password Reset",
     "notes": "Assisted customer with online banking password reset. Verified identity successfully."
+  },
+  {
+    "id": "CALL006",
+    "customerId": "CUST002",
+    "customerName": "Sarah Martinez",
+    "csrId": "CSR004",
+    "csrName": "James Wilson",
+    "startTime": "2025-10-15T11:00:00Z",
+    "duration": 180,
+    "status": "completed",
+    "type": "chat",
+    "subject": "Password Reset",
+    "notes": "Assisted customer with online banking password reset. Verified identity successfully."
   }
 ]

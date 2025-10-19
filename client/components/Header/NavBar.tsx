@@ -42,7 +42,7 @@ export const Navbar = ({ currentRole, onRoleChange, userName }: NavbarProps) => 
         ];
       case "csr":
         return [
-          { to: "/csr", label: "Console" },
+          { to: "/CSR/Console", label: "Console" },
           { to: "/csr/history", label: "History" },
         ];
       case "admin":
