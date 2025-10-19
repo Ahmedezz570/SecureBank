@@ -64,7 +64,7 @@ export const Navbar = ({ currentRole, onRoleChange, userName }: NavbarProps) => 
         <Link key={link.to} href={link.to}>
           <Button
             variant={pathname === link.to ? "secondary" : "ghost"}
-            className="w-full justify-start md:w-auto"
+            className="w-full justify-start md:w-auto cursor-pointer"
           >
             {link.label}
           </Button>
