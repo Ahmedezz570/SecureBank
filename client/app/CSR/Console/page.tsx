@@ -10,6 +10,15 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from '@/components/ui/button';
 const Console = () => {
                     const activeCalls = callsData.filter((call)=>call.status === "active")
+                     const recentCalls = callsData.filter((call) => call.status === "completed").slice(0, 5);
+                     const openComplaints = complaintsData.filter(
+    (c) => c.status === "open" || c.status === "in_progress"
+  );
+                      const handleEscalate = (complaintId: string) => {
+    toast.success("Complaint escalated to admin", {
+      description: `Complaint ${complaintId} has been escalated`,
+    });
+  };
   return (
       <div className='container mx-auto space-y-6 p-6'>
          <div>
@@ -83,15 +92,89 @@ const Console = () => {
                     </div>
           </CardContent>
        </Card >
-                    <Card >
-                       <CardHeader>
-                          <CardTitle>Recent Call History</CardTitle>
-                          <CardDescription>Completed calls</CardDescription>
-                        </CardHeader>
-                        
-                    </Card>
+                      <Card className="shadow-md">
+          <CardHeader>
+            <CardTitle>Recent Call History</CardTitle>
+            <CardDescription>Completed calls</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-4">
+              {recentCalls.map((call) => (
+                <div
+                  key={call.id}
+                  className="flex items-center justify-between border-b pb-4 last:border-0 last:pb-0"
+                >
+                  <div className="flex items-center gap-3">
+                    <User className="h-5 w-5 text-muted-foreground" />
+                    <div>
+                      <p className="text-sm font-medium">{call.customerName}</p>
+                      <p className="text-xs text-muted-foreground">
+                        {call.subject}
+                      </p>
+                    </div>
+                  </div>
+                  <div className="text-right">
+                    <p className="text-sm font-medium">
+                      {Math.floor(call.duration / 60)}m {call.duration % 60}s
+                    </p>
+                    <p className="text-xs text-muted-foreground">
+                      {new Date(call.startTime).toLocaleTimeString([], {
+                        hour: "2-digit",
+                        minute: "2-digit",
+                      })}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
 </div>
-
+<Card className="shadow-md">
+        <CardHeader>
+          <CardTitle>Pending Complaints</CardTitle>
+          <CardDescription>Support tickets requiring attention</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div className="space-y-4">
+            {openComplaints.map((complaint) => (
+              <div
+                key={complaint.id}
+                className="flex items-start justify-between rounded-lg border p-4"
+              >
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2">
+                    <p className="font-medium">{complaint.subject}</p>
+                    <Badge
+                      variant={
+                        complaint.priority === "high"
+                          ? "destructive"
+                          : complaint.priority === "medium"
+                          ? "secondary"
+                          : "outline"
+                      }
+                    >
+                      {complaint.priority}
+                    </Badge>
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    {complaint.customerName} • {complaint.id}
+                  </p>
+                  <p className="text-sm">{complaint.description}</p>
+                </div>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => handleEscalate(complaint.id)}
+                >
+                  <AlertTriangle className="mr-2 h-4 w-4" />
+                  Escalate
+                </Button>
+              </div>
+            ))}
+          </div>
+        </CardContent>
+      </Card>
       </div>
   )
 }
